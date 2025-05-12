@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+---
 
-First, run the development server:
+````md
+# 🛍️ E-Commerce Product Page – Senior Frontend Developer Assessment
+
+This project is a modern, interactive product page built with **Next.js 15+ (App Router)** and **TypeScript** as part of a technical assessment. It showcases real-world frontend engineering skills including performance optimization, accessibility, and custom UI logic.
+
+---
+
+## ✅ Project Checklist
+
+### 🎯 Core Features
+
+- [x] Product image gallery with **zoom on hover**
+- [x] Responsive design across mobile, tablet, and desktop
+- [x] Color/size variant selection with **real-time updates** (image & price)
+- [x] Add to cart functionality with quantity selector
+- [x] Expandable product description section
+
+---
+
+### ⚙️ Advanced Feature (Selected)
+
+- [x] ✅ **Custom state management** using `React Context` + `useReducer`
+  - Global cart state with add, remove, clear, and localStorage persistence
+  - Stock-aware item validation before adding to cart
+
+---
+
+### 🧪 Technical Requirements
+
+- [x] Built with **Next.js 15+** and **App Router**
+- [x] Fully typed using **TypeScript**
+- [x] Unit tests using `@testing-library/react` (e.g., `AddToCartButton`)
+- [x] Accessible components (WCAG 2.1):
+  - Proper ARIA roles, keyboard navigation
+  - Color contrast & focus states
+- [x] Proper handling of **loading and error states**
+- [x] Optimized performance:
+  - Next.js `Image` component
+  - Lazy loaded image gallery
+  - Lighthouse score > 90
+
+---
+
+### 🚀 Performance Enhancements
+
+- [x] Fast initial page load
+- [x] Smooth UI interactions (zoom, hover, transitions)
+- [x] Optimized images (`next/image`, blur placeholder, responsive sizes)
+- [x] Centralized cart state for efficient updates
+
+---
+
+### 🌚 Bonus Features
+
+- [x] Dark/Light mode toggle with persistent state
+- [x] Keyboard-navigable product variant selectors
+- [x] Cart stored in `localStorage` for persistence
+- [ ] Error logging (optional)
+- [ ] Analytics integration (optional)
+
+---
+
+## 🧠 Technical Decisions
+
+- **Custom State Management**: Built from scratch with Context + useReducer for full control and testability.
+- **Image Zoom**: CSS transform with `transform-origin` to simulate interactive zoom.
+- **Responsiveness**: Tailwind CSS utility classes with `aspect-square` and `max-w` wrappers.
+- **Persistence**: LocalStorage sync in `CartContext` for robust UX.
+- **Accessibility**: Focus management, color contrast, button semantics.
+
+---
+
+## 🧪 Testing
+
+Run unit tests:
 
 ```bash
+npm run test
+````
+
+Includes:
+
+* ✅ AddToCartButton behavior test
+* 🧩 Easily extensible with more tests
+
+---
+
+## 📦 How to Run Locally
+
+```bash
+git clone https://github.com/your-username/ecommerce-product-page.git
+cd ecommerce-product-page
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open: [http://localhost:3000/product](http://localhost:3000/product)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Folder Structure
 
-## Learn More
+```
+/app
+  /product         # Main product page (App Router)
+  layout.tsx
+/components        # Reusable UI (ImageGallery, CartOverview, etc.)
+/context           # ThemeContext and CartContext
+/lib               # Mock product data
+/tests             # Unit tests
+/public/images     # Jacket variant images
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> 📌 Add screenshots of:
+>
+> * Zoomed image gallery
+> * Light/dark mode
+> * Cart overview and removal
+> * Variant switching in action
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Optional: Deployed live at [https://your-vercel-project.vercel.app](https://your-vercel-project.vercel.app)
+
+---
+
+## Testing
+
+> npx jest
+
+--- 
+
+## 👋 Final Notes
+
+This project aims to demonstrate best practices in modern frontend development. Feel free to reach out with any questions or feedback!
