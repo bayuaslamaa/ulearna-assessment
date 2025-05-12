@@ -121,9 +121,17 @@ Then open: [http://localhost:3000/product](http://localhost:3000/product)
 > 📌 Add screenshots of:
 >
 > * Zoomed image gallery
+![image](https://github.com/user-attachments/assets/0c721733-c018-4fb7-91fa-2ff24a8c3d46)
+
 > * Light/dark mode
+![image](https://github.com/user-attachments/assets/5ba65532-ded1-407a-9738-aac569ed66aa)
+![image](https://github.com/user-attachments/assets/8eeda7cd-5e10-41c6-9699-63c23811abcd)
+
 > * Cart overview and removal
+![image](https://github.com/user-attachments/assets/4a41dbe9-d532-49fb-a101-ecf03d33702d)
+
 > * Variant switching in action
+![Uploading image.png…]()
 
 ---
 
